@@ -1,0 +1,104 @@
+.Banner {
+  position: relative;
+  text-align: center;
+  margin: 4% 0;
+}
+
+.Banner .HomeIMG {
+  width: 100%;
+  height: 223px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(60%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.Banner h1 {
+  position: absolute;
+  width: 55%;
+  top: 35%;
+  left: 25%;
+  color: white;
+}
+
+section {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.Gallery {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #f6f6f6;
+  width: 90%;
+  border-radius: 25px;
+  row-gap: 40px;
+  padding: 5%;
+}
+
+.Gallery .Card {
+  width: 90%;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(10, 10, 10, 0) 42%,
+      rgba(4, 4, 4, 0.205) 99.99%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    #ff6060;
+  overflow: hidden;
+}
+
+.Gallery a {
+  text-decoration: none;
+}
+
+.Gallery .Card .LogementsIMG {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.Gallery .Card h2 {
+  font-size: 18px;
+  color: white;
+  margin: 3%;
+}
+
+@media screen and (max-width: 767px) {
+  .Banner {
+    margin: 2% 0;
+  }
+
+  .Banner .HomeIMG {
+    height: 111px;
+    box-shadow: none;
+  }
+
+  .Banner h1 {
+    width: 190px;
+    top: 10%;
+    left: 10%;
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .Gallery {
+    grid-template-columns: 1fr;
+    background-color: white;
+    width: 100%;
+    padding: 5% 0;
+  }
+
+  .Gallery .Card {
+    width: 100%;
+    aspect-ratio: 335/255;
+    max-width: none;
+  }
+}

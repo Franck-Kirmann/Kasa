@@ -1,0 +1,30 @@
+footer {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 210px;
+}
+
+footer p {
+  color: white;
+  font-size: 24px;
+}
+
+footer .LogoFooter {
+  width: 122px;
+  padding: 3.5% 0 0.5% 0;
+}
+
+@media screen and (max-width: 767px) {
+  footer .LogoFooter {
+    width: 122px;
+    padding: 0;
+  }
+  footer p {
+    width: 100px;
+    font-size: 12px;
+    text-align: center;
+  }
+}

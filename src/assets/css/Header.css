@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 7.5% 0 7.5%;
+}
+
+header .logo {
+  width: 210px;
+}
+
+header .Nav {
+  gap: 57px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .Nav .No-style {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+header .Nav .selected {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .header .logo {
+    width: 145px;
+  }
+
+  header .Nav {
+    gap: 26px;
+  }
+
+  header .Nav .No-style {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
