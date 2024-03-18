@@ -1,0 +1,125 @@
+.Logements {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Logements .LogementIMG {
+  width: 80%;
+  height: 415px;
+  border-radius: 25px;
+  object-fit: cover;
+  margin-top: 50px;
+}
+
+.Logements .LogementsDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2% 0;
+}
+
+.Logements .LogementsDetails .LogementsInfo h1 {
+  color: #ff6060;
+  font-size: 36px;
+  margin: 0;
+}
+
+.Logements .LogementsDetails .LogementsInfo p {
+  font-size: 18px;
+  margin: 1% 0 4% 0;
+}
+
+.Logements .LogementsDetails .LogementTagList {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.Logements .LogementsDetails .LogementTag {
+  background-color: #ff6060;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.Logements .LogementsDetails .HostDetail {
+  gap: 5%;
+  display: flex;
+}
+
+.Logements .LogementsDetails .HostDetail .HostText {
+  width: 70px;
+  font-size: 18px;
+  color: #ff6060;
+  text-align: end;
+  margin-top: 12px;
+}
+
+.Logements .LogementsDetails .HostDetail .HostIMG {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.DropdownDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 2% 10%;
+}
+.DropdownDetails .CollapseContainer {
+  width: 45%;
+  margin: 1% 0;
+}
+
+.DropdownDetails .CollapseContainer .collapsible {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ff6060;
+  color: white;
+  cursor: pointer;
+  padding: 0 18px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
+
+.DropdownDetails .CollapseContainer .active,
+.collapsible:hover {
+  background-color: #a52a2a;
+}
+
+.DropdownDetails .CollapseContainer .content {
+  width: auto;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  background-color: #f6f6f673;
+}
+
+.Rating {
+  margin-top: 20%;
+  width: 150px;
+}
+
+.Rating .Star {
+  color: #e3e3e3;
+  font-size: 24px;
+  padding: 1%;
+}
+
+.Rating .Color {
+  color: #ff6060;
+}

@@ -38,6 +38,7 @@ section {
   border-radius: 25px;
   row-gap: 40px;
   padding: 5%;
+  margin-bottom: 4%;
 }
 
 .Gallery .Card {
@@ -94,6 +95,7 @@ section {
     background-color: white;
     width: 100%;
     padding: 5% 0;
+    margin-bottom: 10%;
   }
 
   .Gallery .Card {
