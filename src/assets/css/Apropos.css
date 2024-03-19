@@ -6,7 +6,7 @@
   margin: 1% 0;
 }
 
-.DropdownApropos .CollapseContainer .collapsible {
+.DropdownApropos .CollapseContainer .Collapsible {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,12 +23,12 @@
   font-size: 18px;
 }
 
-.DropdownApropos .CollapseContainer .active,
-.collapsible:hover {
+.DropdownApropos .CollapseContainer .Active,
+.Collapsible:hover {
   background-color: #a52a2a;
 }
 
-.DropdownApropos .CollapseContainer .content {
+.DropdownApropos .CollapseContainer .Content {
   width: auto;
   padding: 0 18px;
   max-height: 0;

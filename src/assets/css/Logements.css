@@ -4,12 +4,39 @@
   flex-direction: column;
 }
 
-.Logements .LogementIMG {
+.Logements .Carousel {
   width: 80%;
+}
+
+.Logements .Carousel .LogementIMG {
+  width: 100%;
   height: 415px;
   border-radius: 25px;
   object-fit: cover;
   margin-top: 50px;
+}
+
+.Logements .Carousel {
+  position: relative;
+}
+
+.Logements .CarouselButton {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 80px;
+  color: white;
+  cursor: pointer;
+}
+
+.Logements .CarouselButton:first-child {
+  left: 1%;
+}
+
+.Logements .CarouselButton:last-child {
+  right: 1%;
 }
 
 .Logements .LogementsDetails {
@@ -36,15 +63,14 @@
   gap: 10px;
 }
 
-.Logements .LogementsDetails .LogementTag {
+.Logements .LogementsDetails .LogementTagList .LogementTag {
   background-color: #ff6060;
   font-size: 14px;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 115px;
-  height: 25px;
+  padding: 1% 8%;
   border-radius: 10px;
 }
 
@@ -53,7 +79,7 @@
   display: flex;
 }
 
-.Logements .LogementsDetails .HostDetail .HostText {
+.Logements .LogementsDetails .LogementHost .HostDetail .HostText {
   width: 70px;
   font-size: 18px;
   color: #ff6060;
@@ -61,24 +87,25 @@
   margin-top: 12px;
 }
 
-.Logements .LogementsDetails .HostDetail .HostIMG {
+.Logements .LogementsDetails .LogementHost .HostDetail .HostIMG {
   width: 64px;
   height: 64px;
   border-radius: 50%;
 }
 
-.DropdownDetails {
+.Logements .DropdownDetails {
   display: flex;
   justify-content: space-between;
   width: 80%;
   margin: 2% 10%;
 }
-.DropdownDetails .CollapseContainer {
+
+.Logements .DropdownDetails .CollapseContainer {
   width: 45%;
   margin: 1% 0;
 }
 
-.DropdownDetails .CollapseContainer .collapsible {
+.Logements .DropdownDetails .CollapseContainer .Collapsible {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -95,12 +122,13 @@
   font-size: 18px;
 }
 
-.DropdownDetails .CollapseContainer .active,
-.collapsible:hover {
+.Logements .DropdownDetails .CollapseContainer .Active,
+.Collapsible:hover {
   background-color: #a52a2a;
 }
 
-.DropdownDetails .CollapseContainer .content {
+.Logements .DropdownDetails .CollapseContainer .Content {
+  font-size: 18px;
   width: auto;
   padding: 0 18px;
   max-height: 0;
@@ -109,17 +137,76 @@
   background-color: #f6f6f673;
 }
 
-.Rating {
+.Logements .LogementsDetails .LogementHost .Rating {
   margin-top: 20%;
   width: 150px;
-}
-
-.Rating .Star {
   color: #e3e3e3;
   font-size: 24px;
+}
+
+.Logements .LogementsDetails .LogementHost .Rating .Star {
   padding: 1%;
 }
 
-.Rating .Color {
+.Logements .LogementsDetails .LogementHost .Rating .Color {
   color: #ff6060;
+}
+
+@media screen and (max-width: 767px) {
+  .Logements .Carousel .LogementIMG {
+    height: 255px;
+  }
+  .Logements .LogementsDetails {
+    flex-direction: column;
+  }
+
+  .Logements .LogementsDetails .LogementsInfo h1 {
+    font-size: 18px;
+  }
+
+  .Logements .LogementsDetails .LogementsInfo p {
+    font-size: 14px;
+  }
+
+  .Logements .LogementsDetails .LogementTagList .LogementTag {
+    font-size: 10px;
+    padding: 1% 4%;
+  }
+
+  .Logements .LogementsDetails .LogementHost {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Logements .LogementsDetails .LogementHost .Rating {
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .Logements .LogementsDetails .LogementHost .HostDetail .HostText {
+    font-size: 12px;
+  }
+
+  .Logements .LogementsDetails .LogementHost .HostDetail .HostIMG {
+    width: 32px;
+    height: 32px;
+    margin: 9% 0;
+  }
+
+  .Logements .DropdownDetails {
+    flex-direction: column;
+  }
+
+  .Logements .DropdownDetails .CollapseContainer {
+    width: 100%;
+  }
+
+  .Logements .DropdownDetails .CollapseContainer .Collapsible {
+    font-size: 13px;
+  }
+  .Logements .DropdownDetails .CollapseContainer .Content {
+    font-size: 12px;
+  }
 }

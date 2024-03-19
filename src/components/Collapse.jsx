@@ -10,7 +10,7 @@ function Collapsible({ title, content }) {
   return (
     <div className="CollapseContainer">
       <button
-        className={`collapsible ${isActive ? "active" : ""}`}
+        className={`Collapsible ${isActive ? "Active" : ""}`}
         onClick={toggleCollapsible}
       >
         <p>{title}</p>
@@ -19,7 +19,7 @@ function Collapsible({ title, content }) {
         </span>
       </button>
       <div
-        className="content"
+        className="Content"
         style={{
           maxHeight: isActive ? "1000px" : "0",
           overflow: "hidden",
