@@ -14,14 +14,14 @@ const Home = () => {
       <div className="Gallery">
         {Logements.map((logement) => (
           <NavLink to={`/logements/${logement.id}`} key={logement.id}>
-            <div className="Card" key={logement.id}>
+            <article className="Card" key={logement.id}>
               <img
                 className="LogementsIMG"
                 src={logement.cover}
                 alt={logement.title}
               />
               <h2>{logement.title}</h2>
-            </div>
+            </article>
           </NavLink>
         ))}
       </div>
