@@ -36,3 +36,12 @@
   transition: max-height 0.2s ease-in-out;
   background-color: #f6f6f673;
 }
+
+.DropdownApropos .CollapseContainer span {
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.DropdownApropos .CollapseContainer .Active span {
+  transform: rotate(180deg);
+}

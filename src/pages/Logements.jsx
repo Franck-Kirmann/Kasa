@@ -13,7 +13,7 @@ const LogementDetail = () => {
   const logement = LogementsData.find((logement) => logement.id === id);
 
   if (!logement) {
-    navigate("/error404");
+    navigate("/Error404");
     return null;
   }
 

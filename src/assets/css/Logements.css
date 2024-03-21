@@ -4,6 +4,8 @@
   flex-direction: column;
 }
 
+/******* Carousel *******/
+
 .Logements .Carousel {
   width: 80%;
 }
@@ -38,6 +40,8 @@
 .Logements .CarouselButton:last-child {
   right: 1%;
 }
+
+/******* LogementsDetails *******/
 
 .Logements .LogementsDetails {
   display: flex;
@@ -74,6 +78,8 @@
   border-radius: 10px;
 }
 
+/******* HostDetail *******/
+
 .Logements .LogementsDetails .HostDetail {
   gap: 5%;
   display: flex;
@@ -92,6 +98,25 @@
   height: 64px;
   border-radius: 50%;
 }
+
+/******* Rating *******/
+
+.Logements .LogementsDetails .LogementHost .Rating {
+  margin-top: 20%;
+  width: 150px;
+  color: #e3e3e3;
+  font-size: 24px;
+}
+
+.Logements .LogementsDetails .LogementHost .Rating .Star {
+  padding: 1%;
+}
+
+.Logements .LogementsDetails .LogementHost .Rating .Color {
+  color: #ff6060;
+}
+
+/******* Dropdown *******/
 
 .Logements .DropdownDetails {
   display: flex;
@@ -131,31 +156,28 @@
   font-size: 18px;
   width: auto;
   padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
   transition: max-height 0.2s ease-in-out;
   background-color: #f6f6f673;
 }
 
-.Logements .LogementsDetails .LogementHost .Rating {
-  margin-top: 20%;
-  width: 150px;
-  color: #e3e3e3;
-  font-size: 24px;
+.Logements .DropdownDetails .CollapseContainer span {
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
 }
 
-.Logements .LogementsDetails .LogementHost .Rating .Star {
-  padding: 1%;
-}
-
-.Logements .LogementsDetails .LogementHost .Rating .Color {
-  color: #ff6060;
+.Logements .DropdownDetails .CollapseContainer .Active span {
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 767px) {
+  /******* Carousel *******/
+
   .Logements .Carousel .LogementIMG {
     height: 255px;
   }
+
+  /******* LogementsDetails *******/
+
   .Logements .LogementsDetails {
     flex-direction: column;
   }
@@ -173,12 +195,16 @@
     padding: 1% 4%;
   }
 
+  /******* HostDetail *******/
+
   .Logements .LogementsDetails .LogementHost {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
   }
+
+  /******* Rating *******/
 
   .Logements .LogementsDetails .LogementHost .Rating {
     margin-top: 0;
@@ -194,6 +220,8 @@
     height: 32px;
     margin: 9% 0;
   }
+
+  /******* Dropdown *******/
 
   .Logements .DropdownDetails {
     flex-direction: column;
