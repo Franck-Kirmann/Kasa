@@ -16,9 +16,9 @@
 
 .Banner h1 {
   position: absolute;
-  width: 55%;
-  top: 35%;
-  left: 25%;
+  width: 100%;
+  top: 25%;
+  font-size: 48px;
   color: white;
 }
 

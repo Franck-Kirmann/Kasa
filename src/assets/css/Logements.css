@@ -33,6 +33,14 @@
   cursor: pointer;
 }
 
+.Logements .SlideNumber {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  color: #e3e3e3;
+  font-size: 18px;
+}
+
 .Logements .CarouselButton:first-child {
   left: 1%;
 }
@@ -151,7 +159,9 @@
 .Collapsible:hover {
   background-color: #a52a2a;
 }
-
+.Logements .DropdownDetails .CollapseContainer .Collapsible:hover {
+  background-color: #a52a2a;
+}
 .Logements .DropdownDetails .CollapseContainer .Content {
   font-size: 18px;
   width: auto;
@@ -176,6 +186,9 @@
     height: 255px;
   }
 
+  .Logements .SlideNumber {
+    display: none;
+  }
   /******* LogementsDetails *******/
 
   .Logements .LogementsDetails {
