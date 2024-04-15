@@ -16,6 +16,7 @@
 
 .Banner h1 {
   position: absolute;
+  font-family: Montserrat, sans-serif;
   width: 100%;
   top: 25%;
   font-size: 48px;
@@ -57,6 +58,7 @@ section {
 .Gallery a {
   text-decoration: none;
   padding: 6% 6%;
+  font-family: Montserrat, sans-serif;
 }
 
 .Gallery .Card .LogementsIMG {
@@ -68,6 +70,7 @@ section {
 
 .Gallery .Card h2 {
   font-size: 18px;
+  font-family: Montserrat, sans-serif;
   color: white;
   margin: 3%;
 }

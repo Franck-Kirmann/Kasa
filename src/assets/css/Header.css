@@ -26,7 +26,7 @@ header .Nav .selected {
 }
 
 @media screen and (max-width: 767px) {
-  .header .logo {
+  header .logo {
     width: 145px;
   }
 
