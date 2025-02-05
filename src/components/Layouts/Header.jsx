@@ -16,8 +16,8 @@ const Header = () => {
       <img className="logo" src={Logo} alt="Logo" />
       <div className="Nav">
         <NavLink
-          className={`No-style ${selected === "/" ? "selected" : ""}`}
-          to="/"
+          className={`No-style ${selected === "/Kasa" ? "selected" : ""}`}
+          to="/Kasa"
         >
           Accueil
         </NavLink>
