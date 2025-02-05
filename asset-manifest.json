@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "//franck-kirmann.github.io/Kasa/static/css/main.aefbccdc.css",
-    "main.js": "//franck-kirmann.github.io/Kasa/static/js/main.e13d3771.js",
+    "main.js": "//franck-kirmann.github.io/Kasa/static/js/main.b33d98e1.js",
     "static/js/453.9701a2b0.chunk.js": "//franck-kirmann.github.io/Kasa/static/js/453.9701a2b0.chunk.js",
     "static/media/Apropos.png": "//franck-kirmann.github.io/Kasa/static/media/Apropos.8e5138afef8b0728a9c1.png",
     "static/media/Home.png": "//franck-kirmann.github.io/Kasa/static/media/Home.3681acb72f6284423910.png",
     "index.html": "//franck-kirmann.github.io/Kasa/index.html",
     "main.aefbccdc.css.map": "//franck-kirmann.github.io/Kasa/static/css/main.aefbccdc.css.map",
-    "main.e13d3771.js.map": "//franck-kirmann.github.io/Kasa/static/js/main.e13d3771.js.map",
+    "main.b33d98e1.js.map": "//franck-kirmann.github.io/Kasa/static/js/main.b33d98e1.js.map",
     "453.9701a2b0.chunk.js.map": "//franck-kirmann.github.io/Kasa/static/js/453.9701a2b0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aefbccdc.css",
-    "static/js/main.e13d3771.js"
+    "static/js/main.b33d98e1.js"
   ]
 }
